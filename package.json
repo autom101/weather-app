@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.1"
+  },
+  "name": "weather-app",
+  "description": "A simple weather app to practice using external APIs and async/await",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sojha2/weather-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sojha2/weather-app/issues"
+  },
+  "homepage": "https://github.com/sojha2/weather-app#readme"
+}
