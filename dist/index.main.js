@@ -10,16 +10,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./config.js":
-/*!*******************!*\
-  !*** ./config.js ***!
-  \*******************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst myConfig = {\n  weatherApi_key: \"73de09befe32494386305144230205\",\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (myConfig);\n\n\n//# sourceURL=webpack://weather-app/./config.js?");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/reset.css":
 /*!*****************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/reset.css ***!
@@ -146,7 +136,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/reset.css */ \"./src/css/reset.css\");\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/styles.css */ \"./src/css/styles.css\");\n/* harmony import */ var _config_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config.js */ \"./config.js\");\n//Import css\n\n\n\n//Import js\n\n\nconst getWeather = async () => {\n  const fetchWeather = await fetch(\n    \"http://api.weatherapi.com/v1/current.json?key=\" +\n      _config_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"].weatherApi_key +\n      \"&q=\" +\n      \"London\",\n    {\n      mode: \"cors\",\n    }\n  );\n  const weatherObj = await fetchWeather.json();\n  console.log(weatherObj);\n};\n\ngetWeather();\n\n\n//# sourceURL=webpack://weather-app/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/reset.css */ \"./src/css/reset.css\");\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/styles.css */ \"./src/css/styles.css\");\n//Import css\n\n\n\n//Import js\n\nconst getWeather = async () => {\n  const fetchWeather = await fetch(\n    \"http://api.weatherapi.com/v1/current.json?key=\" +\n      \"73de09befe32494386305144230205\" +\n      \"&q=\" +\n      \"Edmonton\",\n    {\n      mode: \"cors\",\n    }\n  );\n  const weatherObj = await fetchWeather.json();\n  console.log(weatherObj);\n};\n\ngetWeather();\n\n\n//# sourceURL=webpack://weather-app/./src/js/index.js?");
 
 /***/ })
 

@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   mode: "development",
@@ -13,6 +14,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Weather App",
+    }),
+    new Dotenv({
+      path: "./config.env",
+      safe: true,
     }),
   ],
   output: {

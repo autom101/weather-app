@@ -1,12 +1,14 @@
 {
   "dependencies": {
     "css-loader": "^6.7.3",
+    "dotenv": "^16.0.3",
     "style-loader": "^3.3.2",
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2",
     "wepack-cli": "^0.0.1-security"
   },
   "devDependencies": {
+    "dotenv-webpack": "^8.0.1",
     "html-webpack-plugin": "^5.5.1"
   },
   "name": "weather-app",
