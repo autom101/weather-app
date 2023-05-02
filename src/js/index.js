@@ -7,7 +7,7 @@ import "../css/styles.css";
 const getWeather = async () => {
   const fetchWeather = await fetch(
     "http://api.weatherapi.com/v1/current.json?key=" +
-      process.env.weatherApi_key +
+      "73de09befe32494386305144230205" +
       "&q=" +
       "Edmonton",
     {
