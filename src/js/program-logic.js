@@ -1,3 +1,5 @@
+import loadingGif from "../img/loading.gif";
+
 const getWeather = async () => {
   const weather = await fetch(
     "http://api.weatherapi.com/v1/current.json?key=73de09befe32494386305144230205&q=" +

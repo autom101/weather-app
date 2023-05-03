@@ -68,3 +68,13 @@ body {
 #search-form .search-icon:hover {
   cursor: pointer;
 }
+
+/* 
+
+Weather info styling
+
+*/
+
+.weather-container {
+  display: none;
+}
