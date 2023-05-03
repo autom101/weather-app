@@ -3,6 +3,7 @@ import magnify from "../img/magnify.svg";
 const createWeatherDisplay = () => {
   const weatherContainer = document.createElement("div");
   weatherContainer.classList.add("weather-container");
+  weatherContainer.classList.add("hide");
 
   const weatherLeftDiv = document.createElement("div");
   weatherLeftDiv.classList.add("weather-left");
@@ -15,24 +16,31 @@ const createWeatherDisplay = () => {
   weatherRightDivExcess.classList.add("weather-right-excess");
 
   const weatherTitle = document.createElement("h2");
+  weatherTitle.classList.add("weather-title");
   weatherTitle.textContent = "Weather";
 
   const timeToday = document.createElement("h3");
+  timeToday.classList.add("weather-time");
   timeToday.textContent = "Time Placeholder";
 
   const condition = document.createElement("h3");
+  condition.classList.add("weather-condition");
   condition.textContent = "condition Placeholder";
 
   const conditionIcon = document.createElement("img");
+  conditionIcon.classList.add("weather-condition-icon");
   conditionIcon.alt = "An image for a condition";
 
   const temperature = document.createElement("h3");
+  temperature.classList.add("weather-temperature");
   temperature.textContent = "temperature Placeholder";
 
   const humidity = document.createElement("h3");
+  humidity.classList.add("weather-humidity");
   humidity.textContent = "humidity Placeholder";
 
   const wind = document.createElement("h3");
+  wind.classList.add("weather-wind");
   wind.textContent = "wind Placeholder";
 
   weatherLeftDiv.appendChild(timeToday);

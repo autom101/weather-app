@@ -76,5 +76,60 @@ Weather info styling
 */
 
 .weather-container {
+  margin-top: 5rem;
+  height: 150px;
+  width: 800px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-container h2 {
+  font-size: 48px;
+  font-weight: 800;
+  width: 700px;
+  text-align: center;
+}
+
+.weather-container > div {
+  gap: 1rem;
+  padding: 1rem;
+  height: 150px;
+
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-container .weather-left {
+  width: 275px;
+  min-width: 225px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-container .weather-center {
+  width: 150px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-container .weather-center img {
+  height: calc(150px - 2rem);
+  width: calc(150px - 2rem);
+}
+
+.weather-container .weather-right {
+  display: flex;
+  width: 275px;
+  min-width: 275px;
+}
+
+.weather-right-excess {
+  font-size: 70%;
+}
+
+.weather-container.hide {
   display: none;
 }
