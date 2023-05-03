@@ -2,7 +2,7 @@ import magnify from "../img/magnify.svg";
 
 const createSearch = () => {
   const searchForm = document.createElement("form");
-  searchForm.setAttribute("action", "#");
+  searchForm.setAttribute("action", "");
   searchForm.setAttribute("id", "search-form");
 
   const searchLabel = document.createElement("label");
@@ -17,13 +17,18 @@ const createSearch = () => {
   searchInput.setAttribute("name", "city");
   searchInput.setAttribute("maxLength", "85");
 
+  const searchSubmit = document.createElement("button");
+  searchSubmit.setAttribute("type", "submit");
+
   const searchIcon = document.createElement("img");
   searchIcon.src = magnify;
   searchIcon.classList.add("search-icon");
 
+  searchSubmit.appendChild(searchIcon);
+
   searchForm.appendChild(searchLabel);
   searchContainer.appendChild(searchInput);
-  searchContainer.appendChild(searchIcon);
+  searchContainer.appendChild(searchSubmit);
 
   searchForm.appendChild(searchContainer);
 

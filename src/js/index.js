@@ -6,10 +6,9 @@ import "../css/styles.css";
 
 //Import js
 import createDom from "./dom";
-import getWeather from "./weather";
+import createProgramLogic from "./program-logic";
 
-onload = async () => {
+onload = () => {
   createDom();
-  const weatherData = await getWeather();
-  console.log(weatherData);
+  createProgramLogic();
 };

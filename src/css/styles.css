@@ -55,6 +55,11 @@ body {
   border-radius: 8px;
 }
 
+#search-form button {
+  background-color: transparent;
+  border: transparent;
+}
+
 #search-form .search-icon {
   height: 100%;
   width: 50px;

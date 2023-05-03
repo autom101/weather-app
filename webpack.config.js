@@ -9,6 +9,8 @@ module.exports = {
   },
   entry: {
     index: "./src/js/index.js",
+    dom: "./src/js/dom.js",
+    programLogic: "./src/js/program-logic.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
