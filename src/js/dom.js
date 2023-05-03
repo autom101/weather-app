@@ -98,7 +98,14 @@ const createSearch = () => {
   document.body.appendChild(searchForm);
 };
 
+const createHeader = () => {
+  const header = document.createElement("h1");
+  header.textContent = "Weather App";
+  document.body.appendChild(header);
+};
+
 const createDom = () => {
+  createHeader();
   createSearch();
   createWeatherDisplay();
 };
