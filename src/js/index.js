@@ -1,3 +1,5 @@
+//import img
+
 //Import css
 import "../css/reset.css";
 import "../css/styles.css";
@@ -6,6 +8,8 @@ import "../css/styles.css";
 import createDom from "./dom";
 import getWeather from "./weather";
 
-onload = () => {
-  getWeather();
+onload = async () => {
+  createDom();
+  const weatherData = await getWeather();
+  console.log(weatherData);
 };

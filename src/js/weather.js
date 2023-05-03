@@ -1,3 +1,4 @@
+//returns a promise to get weatherData
 const getWeather = async () => {
   const weather = await fetch(
     "http://api.weatherapi.com/v1/current.json?key=73de09befe32494386305144230205&q=" +
@@ -8,7 +9,7 @@ const getWeather = async () => {
     }
   );
   const weatherObj = await weather.json();
-  console.log(weatherObj.current);
+  return weatherObj;
 };
 
 export default getWeather;
